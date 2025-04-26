@@ -1,10 +1,9 @@
-﻿using MassTransit;
-
-namespace HelloApi.Contracts;
+﻿namespace HelloApi.Contracts;
 
 //[EntityName("message-submitted")]
 //[ExcludeFromTopology]
-public class Message 
+// [ConfigureConsumeTopology(false)]
+public class Message
 {
-    public  string Text { get; set; } 
+    public string Text { get; set; } = string.Empty;
 }

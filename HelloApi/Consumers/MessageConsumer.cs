@@ -7,10 +7,10 @@ public class MessageConsumer(ILogger<MessageConsumer> logger) : IConsumer<Messag
 {
     public Task Consume(ConsumeContext<Message> context)
     {
-       // throw new InvalidOperationException(nameof(context));
+        //throw new InvalidOperationException(nameof(context));
         logger.LogInformation($"Message consumed {context.Message.Text}");
-       Task.Delay(10000);
-
+        Task.Delay(10000);
+            
         return Task.CompletedTask;
     }
 }

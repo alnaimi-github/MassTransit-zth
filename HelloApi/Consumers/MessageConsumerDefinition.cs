@@ -6,7 +6,7 @@ namespace HelloApi.Consumers
     {
         public MessageConsumerDefinition()
         {
-            Endpoint(x => x.Name = "message.consumer");
+          //  Endpoint(x => x.Name = "message.consumer");
         }
 
         protected override void ConfigureConsumer(IReceiveEndpointConfigurator endpointConfigurator,
